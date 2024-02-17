@@ -1,0 +1,110 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(255, 255, 254);
+}
+.card-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    /* margin: 100px auto 0; */
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 25px;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffe;
+    color: #555;
+    padding: 10px 55px;
+    height: 60px;
+    border-radius: 30px;
+}
+.search i{
+    font-size: 25px;
+    cursor: pointer;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 50px;
+    color: #555;
+    transition: all 0.3s linear;
+}
+.search:hover i{
+    transform: scale(1.2);
+    color: #00feba;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -15px;
+}
+.weather h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.detaile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.col p{
+    margin: 5px;
+}
+.weather-main{
+    display: none;
+}
+/* ----------------------Responsive mobile ----------- */
+@media (max-width: 425px){
+    .search{
+        gap: 10px;
+    }
+    .search input{
+        padding: 10px 25px;
+    }
+    .detaile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1px;
+        margin-top: 40px;
+    }
+    .card{
+        padding: 40px 25px;
+    }
+    .col{
+    justify-content: space-between;
+}
+}
